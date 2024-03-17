@@ -12,7 +12,7 @@ This project is a RESTful API server built with Node.js and [Express](https://ex
 
 1. Run `npm run dev:server` or `npm start` for a dev server. The server will start running on `http://localhost:3000`.
 
-2. In a separate terminal window, direct to the `app/client` and run the Angular application by typing Navigate to `http://localhost:4200/`.
+2. In a separate terminal window, direct to the `app/client` and run the Angular application by typing `ng serve`. Open the browser and navigate to `http://localhost:4200/`.
 
 
 ### Running unit tests
