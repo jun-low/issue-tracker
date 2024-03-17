@@ -2,12 +2,12 @@
   <h1>Issues</h1>
   <ul>
     @for (issue of issues; track issue.id) {
-      <div>
+      <div class="pb-16">
         <h3>{{ issue.title }}</h3>
         <p>{{ issue.description }}</p>
-        <button (click)="updateIssue(issue)">Update</button>
-        <button (click)="deleteIssue(issue)">Delete</button>
       </div>
+      <button (click)="updateIssue(issue)">Update</button>
+      <button (click)="deleteIssue(issue)">Delete</button>
       } @empty {
       <li>There are no items.</li>
       }
