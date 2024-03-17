@@ -1,0 +1,24 @@
+<div>
+  <h1>Issues</h1>
+  <ul>
+    @for (issue of issues; track issue.id) {
+      <div>
+        <h3>{{ issue.title }}</h3>
+        <p>{{ issue.description }}</p>
+        <button (click)="updateIssue(issue)">Update</button>
+        <button (click)="deleteIssue(issue)">Delete</button>
+      </div>
+      } @empty {
+      <li>There are no items.</li>
+      }
+  </ul>
+</div>
+
+<div>
+  <h3>Create New Issue</h3>
+  <div class="align-items">
+    <input [(ngModel)]="newIssue.title" placeholder="Title" />
+    <input [(ngModel)]="newIssue.description" placeholder="Description" />
+    <button (click)="createIssue()">Create</button>
+  </div>
+</div>
