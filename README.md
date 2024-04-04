@@ -1,4 +1,4 @@
-# Sitemate quiz ✍️
+# Issue tracker ✍️
 
 This project is a RESTful API server built with Node.js and [Express](https://expressjs.com/), along with a [Angular](https://angular.dev/) application to interact with the server. The server application provides endpoints for managing issues, while the Angular application allows users to perform CRUD (Create, Read, Update, Delete) issue.
 
